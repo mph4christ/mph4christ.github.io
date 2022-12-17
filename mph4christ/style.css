@@ -18,7 +18,14 @@ nav{
     align-items: center;
 }
 nav img{
-    width: 100px; 
+    width: 80px; 
+}
+nav h4{
+    font-size: 18px;
+    text-align: left;
+    color: #f44336;
+    font-weight: 600;
+    padding: 10px;
 }
 .nav-links{
     flex: 1;
