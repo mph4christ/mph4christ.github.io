@@ -133,53 +133,36 @@ nav .fa{
 }
 .slider h1{
     font-size: 60px;
-    font-weight: lighter;
+    line-height: 1.4;
+    text-align: center;
+    color: aqua;
+    margin-top: 50px;
 }
 .slider-frame{
-    overflow: hidden;
     height: 400px;
-    width: 600px;
-    margin-left: 30%;
-    margin-top: 20px;
+    width: 400px;
+    position: relative;
+    margin-left: 50%;
+    transform: translate(-50%);
+    background-image: url(slider/img1.jpg);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 5px white;
+    animation: slide_animation 54s infinite linear;
 }
 .slider-frame:hover{
     box-shadow: 0 0 20px 0px rgba(206, 9, 9, 0.2);
 }
 /*---- slider animation ----*/
-@-webkit-keyframes slide_animation{
-    0% {left: 0px;}
-    10% {left: 0px;}
-    20% {left: 600px;}
-    30% {left: 1200px;}
-    40% {left: 1800px;}
-    50% {left: 2400px;}
-    60% {left: 3000px;}
-    70% {left: 3600px;}
-    80% {left: 4200px;}
-    90% {left: 4800px;}
-    100% {left: 4800px;}
-}
-.slide-images{
-    width: 5400px;
-    height: 400px;
-    margin: 0 0 0 -4800px;
-    position: relative;
-    -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 60s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-play-state: running;
-}
-.img-container{
-    height: 400px;
-    width: 600px;
-    position: relative;
-    float: left;
-}
-.img-container img{
-    width: 100%;
-    height: 100%;
-    display: block;
+@keyframes slide_animation{
+    0% {background-image: url(slider/img1.jpg); background-size: 100% 100%;}
+    12.5% {background-image: url(slider/img2.jpg); background-size: 100% 100%;}
+    25% {background-image: url(slider/img3.jpg); background-size: 100% 100%;}
+    37.5% {background-image: url(slider/img4.jpg); background-size: 100% 100%;}
+    50% {background-image: url(slider/img5.jpg); background-size: 100% 100%;}
+    62.5% {background-image: url(slider/img6.jpg); background-size: 100% 100%;}
+    75% {background-image: url(slider/img7.jpg); background-size: 100% 100%;}
+    87.5% {background-image: url(slider/img8.jpg); background-size: 100% 100%;}
+    100% {background-image: url(slider/img9.jpg); background-size: 100% 100%;}
 }
 /*---
 @media(max-width: 700px){
