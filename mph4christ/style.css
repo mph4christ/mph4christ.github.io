@@ -124,55 +124,63 @@ nav .fa{
 
 /*------ image slider ------*/
 .slider{
-    padding: 0;
-    margin: 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
     background-color: floralwhite;
 }
 .slider h1{
-    margin-top: 50px;
-    margin-left: 200px;
     font-size: 60px;
     font-weight: lighter;
 }
 .slider-frame{
     overflow: hidden;
-    height: 800px;
-    width: 1200px;
-    margin-left: 150px;
+    height: 400px;
+    width: 600px;
+    margin-left: 30%;
     margin-top: 20px;
+}
+.slider-frame:hover{
+    box-shadow: 0 0 20px 0px rgba(206, 9, 9, 0.2);
 }
 /*---- slider animation ----*/
 @-webkit-keyframes slide_animation{
     0% {left: 0px;}
     10% {left: 0px;}
-    20% {left: 1200px;}
+    20% {left: 600px;}
     30% {left: 1200px;}
-    40% {left: 2400px;}
+    40% {left: 1800px;}
     50% {left: 2400px;}
-    60% {left: 1200px;}
-    70% {left: 1200px;}
-    80% {left: 0px;}
-    90% {left: 0px;}
-    1000% {left: 0px;}
+    60% {left: 3000px;}
+    70% {left: 3600px;}
+    80% {left: 4200px;}
+    90% {left: 4800px;}
+    100% {left: 4800px;}
 }
 .slide-images{
-    width: 3600px;
-    height: 800px;
-    margin: 0 0 0 -2400px;
+    width: 5400px;
+    height: 400px;
+    margin: 0 0 0 -4800px;
     position: relative;
     -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 33s;
+    -webkit-animation-duration: 60s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
 }
 .img-container{
-    height: 800px;
-    width: 1200px;
+    height: 400px;
+    width: 600px;
     position: relative;
     float: left;
 }
-
+.img-container img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 
 
 /*------ course ------*/
