@@ -122,7 +122,39 @@ nav .fa{
     }
 }
 
-/*------ image slider ------*/
+/*---- daily quotes---*/
+.images{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.image-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.image-col img{
+    width: 100%;
+    display: block;
+}
+.image-col:hover{
+    box-shadow: 0 0 30px 0px rgba(205, 4, 4, 0.2);
+}
+/*------ 
 .slider{
     width: 100%;
     margin: auto;
@@ -156,7 +188,7 @@ nav .fa{
     display: flex;
     animation: slide_animation 16s infinite;
 }
-/*---- slider animation ----*/
+/*---- 
 @keyframes slide_animation{
     0% {transform: translateX(0);}
     12.5% {transform: translateX(-100%);}
